@@ -1,0 +1,56 @@
+// main: ../style.less
+
+.footer{
+    padding: 1.35rem 0;
+
+    background-color: @black;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__credits{
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright{
+    position: relative;
+    color: @gray;
+
+    border-right: 1px solid fade(@gray , 35%) ;
+
+    padding-right: .8rem;
+    margin-right: 1rem;
+}
+
+.footer__nav-link{
+    font-size: .93rem;
+    text-decoration: none;
+    color: @gray;
+    margin-left: 1rem;
+
+    transition: color .2s linear;
+
+    &:hover{
+        color: lighten(@gray , 50%);
+    }
+
+    /*Modificators*/
+
+    &--btn {
+        padding: 0.66rem 2rem;
+
+        border: 2px solid @gray;
+        border-radius: 20px;
+
+        transition: background-color .2s linear, color .2s linear;
+
+        &:hover {
+            background-color: @gray;
+            color: @white;
+        }
+    }
+}

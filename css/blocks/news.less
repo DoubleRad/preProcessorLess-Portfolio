@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.news__image{
+    position: relative;
+    z-index: 1;
+}
+
+.news__photo{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.news__date{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: @black;
+   
+    color: @white;
+    font-size: 1.06rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.news__title{
+    margin-top: 1.3rem;
+    color: @black;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.news__cat{
+    margin-top: .5rem;
+    color: @black;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.news__text{
+    margin: 1.5rem 0;
+    line-height: 1.8;
+}
+
+.news__footer{
+    text-align: right;
+}
+
+.news__link{
+    font-size: .94rem;
+    color: @gray;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
